@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mkuczyns/desktop/MGR/auctions/AuctionsApi/AuctionsApi.csproj": {}
+  },
+  "projects": {
+    "/home/mkuczyns/desktop/MGR/auctions/AuctionsApi/AuctionsApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mkuczyns/desktop/MGR/auctions/AuctionsApi/AuctionsApi.csproj",
+        "projectName": "AuctionsApi",
+        "projectPath": "/home/mkuczyns/desktop/MGR/auctions/AuctionsApi/AuctionsApi.csproj",
+        "packagesPath": "/home/mkuczyns/.nuget/packages/",
+        "outputPath": "/home/mkuczyns/desktop/MGR/auctions/AuctionsApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mkuczyns/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Keycloak.AuthServices.Authentication": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Keycloak.AuthServices.Authorization": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Keycloak.AuthServices.Sdk": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
