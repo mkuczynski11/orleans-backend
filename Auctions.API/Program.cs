@@ -1,6 +1,8 @@
 using System.Text;
+using Auctions.Infrastructure.Data;
 using Keycloak.AuthServices.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Filters;
 
@@ -11,6 +13,9 @@ var configuration = builder.Configuration;
 var services = builder.Services;
 
 // Add services to the container.
+
+var dbConnectionString = builder.Configuration.GetConnectionString("AuctionsDb") ?? throw new InvalidOperationException("Missing connection string configuration");
+builder.Services.AddDbContext<AuctionsDbContext>(options => options.UseNpgsql(dbConnectionString));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
