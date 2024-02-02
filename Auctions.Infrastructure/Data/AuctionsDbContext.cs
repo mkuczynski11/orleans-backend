@@ -15,6 +15,8 @@ public class AuctionsDbContext : DbContext
     public DbSet<Category> Categories => Set<Category>();
     public DbSet<Item> Items => Set<Item>();
     public DbSet<User> Users => Set<User>();
+    public DbSet<AuctionBid> Bids => Set<AuctionBid>();
+    public DbSet<Auction> Auctions => Set<Auction>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
